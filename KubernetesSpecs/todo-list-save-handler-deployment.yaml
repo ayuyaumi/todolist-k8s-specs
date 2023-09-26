@@ -22,11 +22,11 @@ spec:
         kompose.version: 1.30.0 (9d8dcb518)
       creationTimestamp: null
       labels:
-        io.kompose.network/convertedfiles-default: "true"
+        io.kompose.network/composedfiles-default: "true"
         io.kompose.service: todo-list-save-handler
     spec:
       containers:
-        - image: courselabs/todo-list-save-handler:2211
+        - image: nick1950/todo-list-save-handler:1.0
           name: todo-list-save-handler
           resources: {}
           volumeMounts:

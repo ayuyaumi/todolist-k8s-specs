@@ -1,7 +1,7 @@
 services:
 
   todo-list-web:
-    image: courselabs/todo-list-web:2211
+    image: nick1950/todo-list-web:1.0
     ports:
       - 8099:80
     configs:
@@ -13,7 +13,7 @@ services:
       - todo-storage
 
   todo-list-save-handler:
-    image: courselabs/todo-list-save-handler:2211
+    image: nick1950/todo-list-save-handler:1.0
     configs:
       - source: appsettings
         target: /app/config/config.json
